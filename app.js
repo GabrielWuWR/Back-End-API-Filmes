@@ -32,6 +32,9 @@ app.use(`${rotaBase}tipoImagem`, rotasTipoImagem);
 const rotasProdutora = require('./routes/produtora/rotas_produtora.js');
 app.use(`${rotaBase}produtora`, rotasProdutora);
 
+const rotasIdioma = require('./routes/idiomas/rotas_idioma.js');
+app.use(`${rotaBase}idioma`, rotasIdioma);
+
 app.listen(porta, function () {
     console.log(`A api está funcioando em http://localhost:${porta}`);
 });
