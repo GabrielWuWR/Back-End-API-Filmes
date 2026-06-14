@@ -29,6 +29,9 @@ app.use(`${rotaBase}statusFilme`, rotasStatusFilme);
 const rotasTipoImagem = require('./routes/tipoImagem/rotas_tipoImagem.js');
 app.use(`${rotaBase}tipoImagem`, rotasTipoImagem);
 
+const rotasProdutora = require('./routes/produtora/rotas_produtora.js');
+app.use(`${rotaBase}produtora`, rotasProdutora);
+
 app.listen(porta, function () {
     console.log(`A api está funcioando em http://localhost:${porta}`);
 });
