@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 const rotasClassificacao = require('./routes/classificacao/rotas_classificacao.js');
 app.use(`${rotaBase}classificacao`, rotasClassificacao);
 
+const rotasGenero = require('./routes/genero/rotas_genero.js');
+app.use(`${rotaBase}genero`, rotasGenero);
+
 app.listen(porta, function () {
     console.log(`A api está funcioando em http://localhost:${porta}`);
 });
