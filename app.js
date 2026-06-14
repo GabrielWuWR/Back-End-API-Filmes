@@ -23,6 +23,9 @@ app.use(`${rotaBase}classificacao`, rotasClassificacao);
 const rotasGenero = require('./routes/genero/rotas_genero.js');
 app.use(`${rotaBase}genero`, rotasGenero);
 
+const rotasStatusFilme = require('./routes/statusFilme/rotas_statusFilme.js');
+app.use(`${rotaBase}statusFilme`, rotasStatusFilme);
+
 app.listen(porta, function () {
     console.log(`A api está funcioando em http://localhost:${porta}`);
 });
