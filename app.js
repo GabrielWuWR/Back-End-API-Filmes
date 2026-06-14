@@ -38,6 +38,9 @@ app.use(`${rotaBase}idioma`, rotasIdioma);
 const rotasPais = require('./routes/pais/rotas_pais.js');
 app.use(`${rotaBase}pais`, rotasPais);
 
+const rotasPremio = require('./routes/premio/rotas_premio.js');
+app.use(`${rotaBase}premio`, rotasPremio);
+
 app.listen(porta, function () {
     console.log(`A api está funcioando em http://localhost:${porta}`);
 });
