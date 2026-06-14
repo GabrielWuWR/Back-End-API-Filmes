@@ -6,7 +6,7 @@
  * Versão: 1.0.17.4
  **********************************************************************************************/
 
-//Padronização dos retornos da API (Cabeçalho)
+//Padronização dos retornos da API
 const DEFAULT_MESSAGE = {
     api_description: 'API para controlar o projeto de Filmes 🎥.',
     development: 'Gabriel',
@@ -16,7 +16,6 @@ const DEFAULT_MESSAGE = {
     response: {}
 };
 
-//Mensagens de erro do projeto de filmes
 const ERROR_BAD_REQUEST = {
     status: false,
     status_code: 400,
@@ -24,7 +23,6 @@ const ERROR_BAD_REQUEST = {
     image: 'https://http.dog/400.jpg',
 };
 
-//Mensagens de sucesso do projeto de Filmes
 const SUCESS_CREATE_ITEM = {
     status: true,
     status_code: 201,
@@ -227,15 +225,5 @@ const mensagem = {
 };
 
 module.exports = {
-    DEFAULT_MESSAGE,
-    ERROR_BAD_REQUEST,
-    SUCESS_CREATE_ITEM,
-    ERROR_INTERNAL_SERVER_MODEL,
-    ERROR_INTERNAL_SERVER_CONTROLLER,
-    ERROR_CONTENT_TYPE,
-    ERROR_NOT_FOUND,
-    SUCCESS_RESPONSE,
-    SUCCESS_UPDATE_ITEM,
-    SUCCESS_DELETED_ITEM,
     mensagem
 };
